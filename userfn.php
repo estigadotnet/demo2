@@ -32,7 +32,7 @@ function Database_Connecting(&$info) {
 	//	$info["pass"] = "";
 	//}
 
-	if (CurrentHost() == "demo2.salinalintas.com" or CurrentHost() == "salinalintas.com/demodua") { // not connecting to local PC
+	if (CurrentHost() == "demo.salinalintas.com") { // not connecting to local PC
 
 		// connect to the production database 
 		$info["host"] = "mysql.hostinger.co.id";
