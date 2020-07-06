@@ -333,6 +333,9 @@ for ($n = 0;$n < ($jumlahMutasi * $mutasi); $n++) {
 	$posisiPop = intval($posisi/($jumlahKapal * $jumlahDistribusi));
 	$posisiGen = $posisi % ($jumlahKapal * $jumlahDistribusi);
 	$kMutasi[$posisiPop][$posisiGen] = $kMutasi[$posisiPop][$posisiGen] + 0.01;
+	if ($kMutasi[$posisiPop][$posisiGen] == 1) {
+		$kMutasi[$posisiPop][$posisiGen] = 0.01;
+	}
 }
 echo "<br><br>";
 
@@ -617,6 +620,9 @@ for ($n = 0;$n < ($jumlahMutasi * $mutasi); $n++) {
 	$posisiPop = intval($posisi/($jumlahKapal * $jumlahDistribusi));
 	$posisiGen = $posisi % ($jumlahKapal * $jumlahDistribusi);
 	$kMutasi[$posisiPop][$posisiGen] = $kMutasi[$posisiPop][$posisiGen] + 0.01;
+	if ($kMutasi[$posisiPop][$posisiGen] == 1) {
+		$kMutasi[$posisiPop][$posisiGen] = 0.01;
+	}
 }
 //echo "<br><br>";
 
