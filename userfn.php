@@ -32,6 +32,15 @@ function Database_Connecting(&$info) {
 	//	$info["pass"] = "";
 	//}
 
+	if (CurrentHost() == "demo2.salinalintas.com") { // not connecting to local PC
+
+		// connect to the production database 
+		$info["host"] = "mysql.hostinger.co.id";
+		$info["user"] = "u473805576_root";
+		$info["pass"] = "PresarioCQ43";
+		$info["db"] = "u473805576_db_ga";
+		$info["port"] = "3306";
+	}
 }
 
 // Database Connected event
